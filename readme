@@ -9,7 +9,7 @@ In this demonstration, we will deploy two smart contracts. One is a token, and t
 To get started, you will need the following:
 
 Have an account with funds. You can get DEV tokens for testing on Kairos Testnet once every 24 hours from the Kairos Testnet Faucet
-To test out the examples in this guide on kaia or Moonriver, you will need to have your own endpoint and API key, which you can get from one of the supported Endpoint Providers
+To test out the examples in this guide on kaia, you will need to have your own endpoint and API key, which you can get from one of the supported Endpoint Providers
 Have Foundry installed
 Have a KaiaScan API Key
 Create a Foundry Project
