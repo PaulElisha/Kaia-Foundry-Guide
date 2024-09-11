@@ -29,14 +29,18 @@ forge install kaia/kaia-contracts
 
 This will add the Kaia-contracts git submodule to your lib folder. To be sure that this dependency is mapped, you can override the mappings in a special file, remappings.txt:
 
-
+```bash
 forge remappings > remappings.txt
+```
+
 Every line in this file is one of the dependencies that can be referenced in the project's smart contracts. Dependencies can be edited and renamed so that it's easier to reference different folders and files when working on smart contracts. It should look similar to this with OpenZeppelin installed properly:
 
-
+```bash
 ds-test/=lib/forge-std/lib/ds-test/src/
 forge-std/=lib/forge-std/src/
-openzeppelin-contracts/=lib/openzeppelin-contracts/
+kaia-contracts/=lib/kaia-contracts/
+```
+
 Finally, let's open up the foundry.toml file. In preparation for Etherscan verification and deployment, add this to the file:
 
 ```bash
@@ -101,7 +105,7 @@ Open the file and add the following to it:
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// Import OpenZeppelin Contract
+// Import Kaia Contract
 import {MyToken} from "./MyToken.sol";
 
 enum ContainerStatus {
