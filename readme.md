@@ -15,14 +15,18 @@ Have a KaiaScan API Key
 Create a Foundry Project
 The first step to start a Foundry project is, of course, to create it. If you have Foundry installed, you can run:
 
-
-forge init foundry && cd foundry
+```bash
+forge init foundry
+cd foundry
+```
 This will have the forge utility initialize a new folder named foundry with a Foundry project initialized within it. The script, src, and test folders may have files in them already. Be sure to delete them, because we will be writing our own soon.
 
 From here, there are a few things to do first before writing any code. First, we want to add a dependency to OpenZeppelin's smart contracts, because they include helpful contracts to use when writing token smart contracts. To do so, add them using their GitHub repository name:
 
-
+```bash
 forge install kaia/kaia-contracts
+```
+
 This will add the Kaia-contracts git submodule to your lib folder. To be sure that this dependency is mapped, you can override the mappings in a special file, remappings.txt:
 
 
