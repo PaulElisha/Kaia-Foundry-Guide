@@ -64,7 +64,7 @@ The first addition is a specification of the solc_version, underneath profile.de
 ## Add Smart Contracts
 Smart contracts in Foundry destined for deployment by default belong in the src folder. In this tutorial, we'll write two smart contracts. Starting with the token:
 
-``bash
+```bash
 touch MyToken.sol
 ```
 
@@ -196,8 +196,10 @@ If you take a look at the MyTokenTest smart contract, you'll see two functions. 
 
 Great! Let's write some more tests, but for Container.
 
-
+```bash
 touch Container.t.sol
+```
+
 And add the following:
 
 ```solidity
