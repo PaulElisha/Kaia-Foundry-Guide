@@ -1,0 +1,26 @@
+{
+    "functions": [
+        {
+            "name": "setNumber",
+            "expectedBehavior": {
+                "validInputs": [
+                    1,
+                    2,
+                    3
+                ],
+                "invalidInputs": [
+                    -1,
+                    "string",
+                    99999999999
+                ]
+            }
+        },
+        {
+            "name": "increment",
+            "expectedBehavior": {
+                "validInputs": [],
+                "invalidInputs": []
+            }
+        }
+    ]
+}
