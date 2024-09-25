@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "forge-std/StdJson.sol";
 import "forge-std/console2.sol";
-import "forge-std/Vm.sol";
+import "forge-std/Script.sol";
 
 contract TestGenerator {
     using stdJson for string;
